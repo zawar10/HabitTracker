@@ -1,102 +1,92 @@
-# 🔥 Habit Tracker
-
-A Java Swing desktop application for tracking daily habits, monitoring streaks, and building consistency. Built as a semester project for SCD Lab.
+# 🧠 Habit Tracker System (Java Swing Desktop Application)
 
 ---
 
-## 📋 Project Description
+## 📌 Project Overview
 
-Habit Tracker is a GUI-based Java application that allows users to:
+The Habit Tracker System is a desktop-based application developed using **Java Swing**.  
+It helps users manage daily habits by allowing them to add, delete, mark completion, and reset habits.
 
-- Add and manage daily habits
-- Mark habits as done each day
-- Track streaks for each habit
-- View today's completion progress
-- Delete habits or reset all for a new day
+The project demonstrates core **Software Engineering principles** including:
 
-The project demonstrates five core software engineering concepts:
-
-| Concept | Implementation |
-|---|---|
-| **Event Handling** | Button clicks, Enter key, table row selection |
-| **Exception Handling** | Input validation with try/catch and error dialogs |
-| **Code Refactoring** | Modular methods, no code duplication, clean naming |
-| **Unit Testing** | 15 JUnit test cases covering all business logic |
-| **Git & GitHub** | Version controlled with meaningful commit history |
+- Event Handling  
+- Exception Handling  
+- Code Refactoring  
+- Unit Testing (JUnit 4)  
+- Git & GitHub version control  
 
 ---
 
-## 🛠️ Tech Stack
+## 🎯 Features
 
-- **Language:** Java
-- **GUI:** Java Swing
-- **Testing:** JUnit 4
-- **IDE:** Eclipse
-- **Version Control:** Git & GitHub
-
----
-
-## ⚙️ Setup Instructions
-
-### Prerequisites
-- Java JDK 8 or higher installed
-- Eclipse IDE installed
-
-### Steps
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/habit-tracker.git
-   ```
-
-2. **Open in Eclipse**
-   - Open Eclipse
-   - Go to `File → Open Projects from File System`
-   - Select the cloned folder
-
-3. **Add JUnit 4 library**
-   - Right-click the project → `Properties`
-   - Go to `Java Build Path → Libraries`
-   - Click `Add Library → JUnit → JUnit 4`
-   - Click `Finish → Apply and Close`
-
-4. **Run the application**
-   - Right-click `HabitTrackerApp.java`
-   - Select `Run As → Java Application`
-
-5. **Run unit tests**
-   - Right-click `HabitTrackerTest.java`
-   - Select `Run As → JUnit Test`
-   - All 15 tests should pass ✅
+### 🪟 GUI Features
+- Professional system-style **gray and white interface**
+- Two separate windows:
+  - **Dashboard Screen** (Main Management Interface)
+  - **Add Habit Screen** (Input Form Window)
+- JTable-based habit display
 
 ---
 
-## ✅ Features
-
-- **Add Habit** — Enter a name and press Add or hit Enter
-- **Mark Done** — Select a habit and mark it complete for today
-- **Delete** — Remove a habit with confirmation dialog
-- **Reset All** — Start fresh for a new day
-- **Streak Counter** — Tracks how many days in a row each habit is done
-- **Progress Display** — Shows X/Y habits done with percentage
-- **Input Validation** — Empty names, duplicates, and long names are rejected
+### ⚙️ Functional Features
+- Add new habits via separate screen
+- Delete selected habit
+- Mark habit as completed
+- Reset daily progress
+- Automatic table updates
 
 ---
 
-## 🧪 Unit Tests
-
-Tests are written using JUnit 4 and cover:
-
-- `calculateProgress()` — progress percentage calculation
-- `incrementStreak()` — streak counter logic
-- `validateHabitName()` — input validation rules
-- `isDuplicate()` — duplicate habit detection
+## 🧠 Software Engineering Concepts Implemented
 
 ---
 
-## 👤 Author
+### ✔ Event Handling
+The application uses Java Swing event listeners such as:
+- Button click events (Add, Delete, Mark Done, Reset)
+- Form submission events in Add Habit Screen
 
-- **Name:** Zawar Ahmed
-- **Roll No:** L1F23BSSE0407
-- **Course:** Software Construction and Development (SCD) Lab
-- **Semester:** Spring 2026
+---
+
+### ✔ Exception Handling
+The system handles runtime errors safely using try-catch blocks:
+- Prevents crashes from empty input
+- Handles invalid table selection
+- Shows user-friendly error messages using dialog boxes
+
+---
+
+### ✔ Code Refactoring
+The project follows clean coding practices:
+- Separation of GUI and logic
+- Modular methods for each operation
+- Meaningful naming conventions
+- Reduced code duplication
+
+---
+
+### ✔ Unit Testing (JUnit 4)
+Automated test cases verify core functionality:
+- Habit creation test
+- Mark done functionality test
+- Reset functionality test
+- Edge case handling (null / empty input)
+- System stability test
+
+---
+
+### ✔ Git & GitHub
+The project follows proper version control practices:
+- Frequent commits with meaningful messages
+- Feature-based development approach
+- Organized repository structure
+- README documentation included
+
+---
+
+## 🛠 Technologies Used
+
+- Java (JDK 8+)
+- Java Swing (GUI Framework)
+- JUnit 4 (Unit Testing)
+- Eclipse IDE
